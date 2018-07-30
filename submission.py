@@ -3,11 +3,9 @@ import numpy as np
 import operator
 from sklearn.feature_extraction.text import TfidfTransformer
 
-def fool_classifier(test_data): ## Please do not change the function defination...
+def fool_classifier(test_data):
     ## Read the test data file, i.e., 'test_data.txt' from Present Working Directory...
-    
-    ## You are supposed to use pre-defined class: 'strategy()' in the file `helper.py` for model training (if any),
-    #  and modifications limit checking
+
     strategy_instance=helper.strategy()
     class0 = strategy_instance.class0 
     class1 = strategy_instance.class1
@@ -88,7 +86,6 @@ def fool_classifier(test_data): ## Please do not change the function defination.
     with open(modified_data, 'w') as f:
         f.writelines(new_paragraphs)
     
-    
-    ## You can check that the modified text is within the modification limits.
+
     assert strategy_instance.check_data(test_data, modified_data)
-    return strategy_instance ## NOTE: You are required to return the instance of this class.
+    return strategy_instance
