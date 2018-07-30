@@ -1,0 +1,5 @@
+add 10 delete 10: 84%
+add 15 delete 5: 65%
+add 17 delete 3: 42%
+add 5 delete 15: 92.5%
+add 3 delete 17: 89.5%
